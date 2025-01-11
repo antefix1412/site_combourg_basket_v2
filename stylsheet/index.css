@@ -51,13 +51,18 @@ main summary{
 
 main details{
     border: solid  rgb(17, 163, 211);
-    width: calc(100% / 3);
-    margin-left: calc(100% / 3);
+    width: calc(100% / 2);
+    margin-left: calc(100% / 4);
     margin-top: 1rem;
+    background-color: rgb(13, 121, 157);
 }
 
-main details :hover{
-    background-color: rgb(27, 27, 164);
+main summary{
+    background-color: rgb(17, 17, 116);
+}
+
+p{
+    font-size: 1.2rem;
 }
 
 main img{
