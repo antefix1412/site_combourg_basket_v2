@@ -16,6 +16,18 @@ header{
     background-color: rgb(17, 163, 211);
 }
 
+.hea{
+    margin-right: 5rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li :hover{
+    background-color: rgb(13, 121, 157);
+}
+
 main{
     text-align: center;
     background-color: rgb(17, 17, 116);
