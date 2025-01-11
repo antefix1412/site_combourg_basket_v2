@@ -7,7 +7,7 @@
 }
 
 header img{
-    width: 5rem;
+    width: 10rem;
 }
 
 header{
@@ -20,12 +20,36 @@ main{
     text-align: center;
     background-color: rgb(17, 17, 116);
     padding-bottom: 3rem;
+    
 }
 
 main h1{
     padding: 3rem;
 }
 
+main h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+main summary{
+    font-size: 1.7rem;
+}
+
+main details{
+    border: solid  rgb(17, 163, 211);
+    width: calc(100% / 3);
+    margin-left: calc(100% / 3);
+    margin-top: 1rem;
+}
+
+main details :hover{
+    background-color: rgb(27, 27, 164);
+}
+
+main img{
+    margin-top: 2rem;
+}
 
 footer{
     display: flex;
