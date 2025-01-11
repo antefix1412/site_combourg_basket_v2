@@ -1,7 +1,6 @@
 *, ::after, ::before{
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 17, 116);
     color: white;
     list-style: none;
     text-decoration: none;
@@ -14,20 +13,13 @@ header img{
 header{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(17, 163, 211);
 }
-
-header li{
-    display: flex;
-    list-style: none;
-}
-
-header .ul{
-    display: block;
-}
-
 
 main{
     text-align: center;
+    background-color: rgb(17, 17, 116);
+    padding-bottom: 3rem;
 }
 
 main ul{
@@ -50,6 +42,8 @@ footer{
     display: flex;
     justify-content: center;
     padding: 5px;
+    padding-top: 2rem;
+    background-color: rgb(17, 163, 211);
 }
 
 footer ul{

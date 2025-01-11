@@ -1,7 +1,6 @@
 *, ::after, ::before{
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 17, 116);
     color: white;
     list-style: none;
     text-decoration: none;
@@ -14,27 +13,17 @@ header img{
 header{
     display: flex;
     justify-content: space-between;
-}
-
-header li{
-    display: flex;
-    list-style: none;
-}
-
-header details, header summary{
-    list-style: none
-}
-
-ul ,li{
-    text-decoration: none;
+    background-color: rgb(17, 163, 211);
 }
 
 main{
     text-align: center;
+    background-color: rgb(17, 17, 116);
+    padding-bottom: 3rem;
 }
 
 main h1{
-    margin: 3rem;
+    padding: 3rem;
 }
 
 
@@ -42,7 +31,8 @@ footer{
     display: flex;
     justify-content: center;
     padding: 5px;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(17, 163, 211);
 }
 
 footer ul{
