@@ -50,6 +50,10 @@ main img{
     width: 40rem;
 }
 
+main a{
+    font-size: 1.4rem;
+}
+
 
 footer{
     display: flex;
