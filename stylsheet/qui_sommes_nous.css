@@ -1,0 +1,68 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 116);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+header img{
+    width: 5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header li{
+    display: flex;
+    list-style: none;
+}
+
+header details, header summary{
+    list-style: none
+}
+
+ul ,li{
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+}
+
+main h1{
+    margin: 3rem;
+}
+
+main p{
+    margin: 2rem;
+}
+
+main ul{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+main img{
+    width: 40rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+
+footer img{
+    width: 20px;
+    padding: 5px;
+}
