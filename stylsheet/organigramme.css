@@ -35,6 +35,22 @@ main{
     padding-bottom: 3rem;
 }
 
+main summary{
+    font-size: 1.7rem;
+}
+
+main details{
+    border: solid  rgb(17, 163, 211);
+    width: calc(100% / 2);
+    margin-left: calc(100% / 4);
+    margin-top: 1rem;
+    background-color: rgb(13, 121, 157);
+}
+
+main summary{
+    background-color: rgb(17, 17, 116);
+}
+
 
 footer{
     display: flex;
