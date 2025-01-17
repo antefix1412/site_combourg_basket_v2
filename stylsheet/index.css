@@ -1,7 +1,7 @@
 *, ::after, ::before{
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     list-style: none;
     text-decoration: none;
 }
@@ -10,10 +10,14 @@ header img{
     width: 10rem;
 }
 
+.hea li a{
+    color: white;
+}
+
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
 }
 
 .hea{
@@ -31,7 +35,7 @@ header li :hover{
 
 main{
     text-align: center;
-    background-color: rgb(17, 17, 116);
+    background-color: white;
     padding-bottom: 3rem;
     
 }
@@ -50,15 +54,19 @@ main summary{
 }
 
 main details{
-    border: solid  rgb(17, 163, 211);
+    border: solid  rgb(42,67,99);
     width: calc(100% / 2);
     margin-left: calc(100% / 4);
     margin-top: 1rem;
-    background-color: rgb(13, 121, 157);
+    background-color: rgb(42,67,99);
+}
+
+main details p, main details h2, main details li{
+    color: white;
 }
 
 main summary{
-    background-color: rgb(17, 17, 116);
+    background-color: white;
 }
 
 p{
@@ -74,7 +82,11 @@ footer{
     justify-content: center;
     padding: 5px;
     padding-top: 2rem;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
+}
+
+footer p{
+    color: white;
 }
 
 footer ul{

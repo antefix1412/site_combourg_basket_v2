@@ -13,7 +13,7 @@ header img{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
 }
 
 .hea{
@@ -43,7 +43,11 @@ footer{
     justify-content: center;
     padding: 5px;
     padding-top: 2rem;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
+}
+
+footer p{
+    color: white;
 }
 
 footer ul{

@@ -13,7 +13,7 @@ header img{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
 }
 
 .hea{
@@ -31,16 +31,17 @@ header li :hover{
 
 main{
     text-align: center;
-    background-color: rgb(17, 17, 116);
+    background-color: white;
     padding-bottom: 3rem;
 }
 
 main summary{
     font-size: 1.7rem;
+    color: black;
 }
 
 main details{
-    border: solid  rgb(17, 163, 211);
+    border: solid  rgb(42,67,99);
     width: calc(100% / 2);
     margin-left: calc(100% / 4);
     margin-top: 1rem;
@@ -48,7 +49,7 @@ main details{
 }
 
 main summary{
-    background-color: rgb(17, 17, 116);
+    background-color: white;
 }
 
 
@@ -57,7 +58,8 @@ footer{
     justify-content: center;
     padding: 5px;
     padding-top: 2rem;
-    background-color: rgb(17, 163, 211);
+    background-color: rgb(42,67,99);
+    color: white;
 }
 
 footer ul{
