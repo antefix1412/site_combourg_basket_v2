@@ -1,10 +1,32 @@
 * {
 	margin: 0;
 	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	outline: none;
-	font-family: "Montserrat";
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+header img{
+    width: 10rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 163, 211);
+}
+
+.hea{
+    font-size: 1.2rem;
+    margin-right: 5rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li :hover{
+    background-color: rgb(13, 121, 157);
 }
 
 .container {
@@ -124,6 +146,26 @@
 	margin: 25px 0;
 	line-height: 1.5em;
 	text-align: justify;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-top: 2rem;
+    background-color: rgb(17, 163, 211);
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+
+footer img{
+    width: 20px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 1280px) {
