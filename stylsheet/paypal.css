@@ -30,13 +30,22 @@ header li :hover{
 }
 
 main{
-    align-items: center;
     text-align: center;
+    align-items: center; 
+    justify-content: center;
+}
+
+main h1{
     color: black;
+    margin: 2rem;
 }
 
 .articles{
+    text-align: center;
+    align-items: center;
     width: 40%;
+    margin: 1rem;
+    padding-left: 30%;
 }
 
 .articles a{
