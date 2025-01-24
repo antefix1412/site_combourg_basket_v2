@@ -36,7 +36,6 @@ main{
 }
 
 .flex{
-    display: grid;
     justify-content: space-around;
 }
 
@@ -56,7 +55,7 @@ main h1{
 
 main div{
     border: 2px solid black;
-    width: 150%;
+    width: 20%;
     text-align: center;
 }
 
