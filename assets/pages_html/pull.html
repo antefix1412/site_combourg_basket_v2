@@ -22,9 +22,61 @@
     <main>
         <img src="#" alt="image du pull">
 
-        <section>
-            
-        </section>
+        <form action="#" method="post">
+            <!-- Sélection de la taille -->
+            <label for="taille">Taille :</label>
+            <select id="taille" name="taille" required>
+                <option value="">-- Sélectionnez une taille --</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        
+            <!-- Sélection de la couleur -->
+            <label for="couleur">Couleur :</label>
+            <select id="couleur" name="couleur" required>
+                <option value="">-- Sélectionnez une couleur --</option>
+                <option value="rouge">Rouge</option>
+                <option value="bleu">Bleu</option>
+                <option value="vert">Vert</option>
+                <option value="noir">Noir</option>
+            </select>
+        
+            <!-- Option de flocage -->
+            <label for="flocage">Souhaitez-vous un flocage ?</label>
+            <select id="flocage" name="flocage" onchange="toggleInitiales()" required>
+                <option value="">-- Sélectionnez une option --</option>
+                <option value="non">Non</option>
+                <option value="oui">Oui</option>
+            </select>
+        
+            <!-- Saisie des initiales pour le flocage -->
+            <div id="initiales-container" style="display: none;">
+                <label for="initiales">Initiales pour le flocage :</label>
+                <input type="text" id="initiales" name="initiales" maxlength="3" placeholder="Ex : ABC">
+            </div>
+        
+            <!-- Bouton de soumission -->
+            <button type="submit">Valider</button>
+        </form>
+        
+        <script>
+            // Fonction pour afficher ou masquer le champ des initiales
+            function toggleInitiales() {
+                const flocage = document.getElementById('flocage').value;
+                const initialesContainer = document.getElementById('initiales-container');
+        
+                if (flocage === 'oui') {
+                    initialesContainer.style.display = 'block';
+                    document.getElementById('initiales').required = true;
+                } else {
+                    initialesContainer.style.display = 'none';
+                    document.getElementById('initiales').required = false;
+                }
+            }
+        </script>
+        
 
     </main>
 
