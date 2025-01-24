@@ -31,27 +31,37 @@ header li :hover{
 }
 
 main{
+    color: black;
     text-align: center;
     background-color: white;
     padding-bottom: 3rem;
 }
 
+main h1{
+    margin: 2rem;
+}
+
 main summary{
     color: black;
     background-color: white;
-    margin-bottom: 25px;
+    padding-bottom: 4px;
+    font-size: 1.7rem;
 }
 
 main details{
     margin: 1rem;
-    border: 1px solid black;
+    border: 2px solid rgb(42,67,99);
     width: 40%;
     margin-left: 30%;
     background-color: rgb(42,67,99);
 }
 
-main h1{
-    margin: 1rem;
+main details img{
+    padding-top: 1rem;
+}
+
+main details p{
+    color: white;
 }
 
 main img{
