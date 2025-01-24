@@ -38,6 +38,8 @@ main{
 
 main summary{
     color: black;
+    background-color: white;
+    margin-bottom: 25px;
 }
 
 main details{
@@ -45,6 +47,7 @@ main details{
     border: 1px solid black;
     width: 40%;
     margin-left: 30%;
+    background-color: rgb(42,67,99);
 }
 
 main h1{
