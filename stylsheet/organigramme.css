@@ -35,6 +35,11 @@ main{
     padding-bottom: 3rem;
 }
 
+.flex{
+    display: grid;
+    justify-content: space-around;
+}
+
 main p, main h2{
     color: black;
     margin-bottom: 1rem;
@@ -49,21 +54,10 @@ main h1{
     margin: 2rem;
 }
 
-main summary{
-    font-size: 1.7rem;
-    color: black;
-}
-
-main details{
-    border: solid  rgb(42,67,99);
-    width: calc(100% / 2);
-    margin-left: calc(100% / 4);
-    margin-top: 1rem;
-    background-color: rgb(13, 121, 157);
-}
-
-main summary{
-    background-color: white;
+main div{
+    border: 2px solid black;
+    width: 150%;
+    text-align: center;
 }
 
 
