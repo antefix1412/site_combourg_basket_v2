@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-    color: white;
+    color: black;
     list-style: none;
     text-decoration: none;
 }
@@ -25,9 +25,15 @@ header{
     align-items: center;
 }
 
+header a{
+    color: white;
+}
+
 header li :hover{
     background-color: rgb(13, 121, 157);
 }
+
+
 
 footer{
     display: flex;
