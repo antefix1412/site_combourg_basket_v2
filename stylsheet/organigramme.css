@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     color: white;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -17,6 +16,7 @@ header{
 }
 
 .hea{
+    list-style: none;
     font-size: 1.2rem;
     margin-right: 5rem;
     width: 40%;
@@ -54,6 +54,7 @@ main summary{
 
 
 footer{
+    list-style: none;
     display: flex;
     justify-content: center;
     padding: 5px;
