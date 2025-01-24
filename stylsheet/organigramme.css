@@ -35,6 +35,15 @@ main{
     padding-bottom: 3rem;
 }
 
+main p, main h2{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.org img{
+    width: 10rem;
+}
+
 main h1{
     color: black;
     margin: 2rem;
