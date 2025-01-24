@@ -59,25 +59,10 @@
         
             <!-- Bouton de soumission -->
             <button type="submit">Valider</button>
-        </form>
-        
-        <script>
-            // Fonction pour afficher ou masquer le champ des initiales
-            function toggleInitiales() {
-                const flocage = document.getElementById('flocage').value;
-                const initialesContainer = document.getElementById('initiales-container');
-        
-                if (flocage === 'oui') {
-                    initialesContainer.style.display = 'block';
-                    document.getElementById('initiales').required = true;
-                } else {
-                    initialesContainer.style.display = 'none';
-                    document.getElementById('initiales').required = false;
-                }
-            }
-        </script>
-        
 
+            <!-- Bouton PayPal -->
+            <div id="paypal-button-container"></div>
+        </form>
     </main>
 
     <footer>
@@ -88,6 +73,43 @@
         <p>Copyright© 2025 <br>
         Site développé par Antoine Lemesle</p>
     </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=VOTRE_CLIENT_ID&currency=EUR"></script>
+    <script>
+        // Remplacez VOTRE_CLIENT_ID par votre clé d'application PayPal
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                // Créer une commande pour PayPal
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '29.99' // Remplacez par le montant approprié
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                // Confirmation du paiement
+                return actions.order.capture().then(function(details) {
+                    alert('Transaction réussie par ' + details.payer.name.given_name + '!');
+                    // Vous pouvez ici soumettre le formulaire ou traiter les informations
+                });
+            }
+        }).render('#paypal-button-container'); // Affiche le bouton PayPal
+
+        // Fonction pour afficher ou masquer le champ des initiales
+        function toggleInitiales() {
+            const flocage = document.getElementById('flocage').value;
+            const initialesContainer = document.getElementById('initiales-container');
     
+            if (flocage === 'oui') {
+                initialesContainer.style.display = 'block';
+                document.getElementById('initiales').required = true;
+            } else {
+                initialesContainer.style.display = 'none';
+                document.getElementById('initiales').required = false;
+            }
+        }
+    </script>
 </body>
 </html>
