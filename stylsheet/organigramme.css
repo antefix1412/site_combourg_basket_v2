@@ -35,6 +35,11 @@ main{
     padding-bottom: 3rem;
 }
 
+main h1{
+    color: black;
+    margin: 2rem;
+}
+
 main summary{
     font-size: 1.7rem;
     color: black;
