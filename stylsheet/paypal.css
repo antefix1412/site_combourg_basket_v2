@@ -49,9 +49,14 @@ main h1{
     border: 1px solid black;
     border-radius: 7px;
     background-color: rgb(238, 238, 238);
-    display: flex;
     padding: 7px;
     justify-content: space-around;
+}
+
+.articles a{
+    justify-content: space-around;
+    text-align: center; 
+    display: flex;
 }
 
 .articles p{
