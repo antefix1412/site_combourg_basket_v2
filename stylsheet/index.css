@@ -53,6 +53,7 @@ main summary{
 }
 
 main details{
+    border-radius: 7px;
     border: solid  rgb(42,67,99);
     width: calc(100% / 2);
     margin-left: calc(100% / 4);

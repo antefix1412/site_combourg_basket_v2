@@ -49,6 +49,7 @@ main summary{
 }
 
 main details{
+    border-radius: 7px;
     margin: 1rem;
     border: 2px solid rgb(42,67,99);
     width: 40%;
