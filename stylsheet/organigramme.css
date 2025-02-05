@@ -38,7 +38,7 @@ main{
 .flex{
     justify-content: space-around;   
     display: flex;
-
+    margin-bottom: 2rem;
 }
 
 main p, main h2{
