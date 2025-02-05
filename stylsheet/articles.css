@@ -33,6 +33,10 @@ header li :hover{
     background-color: rgb(13, 121, 157);
 }
 
+main{
+    display: flex;
+}
+
 form {
     max-width: 400px;
     margin: auto;
