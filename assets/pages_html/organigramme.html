@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organigramme</title>
     <link rel="stylesheet" href="../../stylsheet/organigramme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--utilisation des effet aos-->
 </head>
 <body>
     <header>
@@ -23,28 +24,74 @@
 
         <h2>Les dirigeants :</h2>
 
-        <section class="flex">
+        <section class="flex" >
 
-            <div class="org">
+            <div class="org"data-aos="flip-right" data-aos-offset="400">  <!-- Ajouter un rotation du cadre puis le délai (400)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" >
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+                
+            </div>
+            <div class="org" data-aos="fade-up-right"data-aos-offset="500"><!-- Ajouter une arrivée du bas vers la droite du cadre puis le délai (500)de rotation selon la position du cadre-->
                 <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
                 <p>Prénom : <br>Nom : <br>Fonction :</p>
             </div>
+            <div class="org" data-aos="zoom-in"data-aos-offset="600"> <!-- Ajouter une arrivée en zoom du cadre puis le délai (600)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
+            <div class="org" data-aos="zoom-out"data-aos-offset="700"> <!-- Ajouter une arrivée en zoom du cadre puis le délai (700)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
         </section>
 
         
         <h2>L'entraineur :</h2>
 
         <section class="flex">
-
+            <div class="org">
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" data-aos="flip-right" data-aos-offset="300" > <!-- Ajouter un rotation de la photo puis le délai (300)de rotation selon la position du cadre-->
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+                
+            </div>
+            <div class="org" > 
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" data-aos="flip-right"data-aos-offset="400"> <!-- Ajouter un rotation de la photo puis le délai (400)de rotation selon la position du cadre-->
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
+            <div class="org" >
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" data-aos="flip-right"data-aos-offset="500"> <!-- Ajouter un rotation de la photo puis le délai (500)de rotation selon la position du cadre-->
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
+            <div class="org" > 
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" data-aos="flip-right"data-aos-offset="600">> <!-- Ajouter un rotation de la photo puis le délai (600)de rotation selon la position du cadre-->
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
         </section>
         
-
-        
+            
         <h2>Les bénevoles :</h2>
 
         <section class="flex">
+            <div class="org"data-aos="flip-right" data-aos-offset="400"> <!-- Ajouter un rotation du cadre puis le délai (400)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club" >
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+                
+            </div>
+            <div class="org" data-aos="flip-right"data-aos-offset="400"> <!-- Ajouter un rotation du cadre puis le délai (400)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
+            <div class="org" data-aos="flip-right"data-aos-offset="400"> <!-- Ajouter un rotation du cadre puis le délai (400)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
+            <div class="org" data-aos="flip-right"data-aos-offset="400"> <!-- Ajouter un rotation du cadre puis le délai (400)de rotation selon la position du cadre-->
+                <img src="../images/exterieur_salle.jpeg" alt="image de dirigeants du club">
+                <p>Prénom : <br>Nom : <br>Fonction :</p>
+            </div>
 
         </section>
+        
+
         
     </main>
 
@@ -58,6 +105,11 @@
         <p>Copyright© 2025 <br>
         Site développé par Antoine Lemesle</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   <!--utilisation des effet aos-->
+    <script> 
+        AOS.init();   
+    </script>        <!--utilisation des effet aos-->
     
 </body>
 </html>
