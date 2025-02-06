@@ -1,10 +1,16 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+header('Content-Type: application/json');
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../PHPMailer/src/Exception.php';
-require '../../PHPMailer/src/PHPMailer.php';
-require '../../PHPMailer/src/SMTP.php';
+require 'assets/phpmailer/src/Exception.php';
+require 'assets/phpmailer/src/PHPMailer.php';
+require 'assets/phpmailer/src/SMTP.php';
+
+header('Content-Type: application/json'); // ✅ On force la réponse en JSON
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $taille = htmlspecialchars($_POST['taille']);
@@ -15,12 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mail = new PHPMailer(true);
 
     try {
-        // Configuration du serveur SMTP
+        // Configuration SMTP
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'a.lemesle26@gmail.com'; // 🔹 Ton adresse Gmail
-        $mail->Password = 'ccny hzuk fyxg jwjt'; // 🔹 Ton mot de passe d'application
+        $mail->Username = 'tonemail@gmail.com';
+        $mail->Password = 'mot_de_passe_application';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -28,20 +34,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->setFrom('tonemail@gmail.com', 'Boutique Club');
         $mail->addAddress('a.lemesle26@gmail.com');
 
-        // Contenu de l'e-mail
+        // Contenu
         $mail->isHTML(true);
         $mail->Subject = 'Nouvelle commande de maillot';
-        $mail->Body = "Nouvelle commande reçue :<br><br>
+        $mail->Body = "Nouvelle commande reçue :<br>
                        <strong>Taille :</strong> $taille<br>
                        <strong>Couleur :</strong> $couleur<br>
                        <strong>Flocage :</strong> $flocage<br>
                        <strong>Initiales :</strong> $initiales";
 
         $mail->send();
-        echo "Commande envoyée avec succès ! Vous pouvez procéder au paiement.";
+        echo json_encode(["message" => "Commande envoyée avec succès ! Vous pouvez procéder au paiement."]); // ✅ Réponse JSON correcte
     } catch (Exception $e) {
-        echo "❌ Erreur lors de l'envoi de l'email : {$mail->ErrorInfo}";
+        echo json_encode(["error" => "Erreur lors de l'envoi de l'email : " . $mail->ErrorInfo]); // ✅ JSON en cas d'erreur
     }
 } else {
-    echo "❌ Méthode non autorisée.";
+    echo json_encode(["error" => "Méthode non autorisée."]); // ✅ JSON valide
 }
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    echo json_encode(["message" => "Commande envoyée avec succès !"]);
+} else {
+    echo json_encode(["error" => "Méthode non autorisée."]);
+}
+?>
