@@ -1,62 +1,109 @@
+/* Styles spécifiques pour maillots.html en cohérence avec index.css et articles.css */
+
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     color: black;
     list-style: none;
     text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
-header img{
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(42,67,99);
+    padding: 10px 20px;
+}
+
+header img {
     width: 10rem;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(42,67,99);
-}
-
-.hea{
+.hea {
+    list-style: none;
     font-size: 1.2rem;
-    margin-right: 5rem;
     width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 5rem;
 }
 
-header a{
+.hea li a {
     color: white;
 }
 
-header li :hover{
+header li:hover {
     background-color: rgb(13, 121, 157);
 }
 
-main{
+main {
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.article-card {
+    background: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+}
+
+.article-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 form {
     max-width: 400px;
-    margin: auto;
+    width: 100%;
     padding: 20px;
     background: rgb(238, 238, 238);
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    text-align: left;
 }
 
 input, select, button {
     width: 100%;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -67,6 +114,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -79,25 +128,36 @@ button:hover {
     text-align: center;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5px;
     padding-top: 2rem;
     background-color: rgb(42,67,99);
-}
-
-footer p{
     color: white;
 }
 
-footer ul{
+footer ul {
     display: flex;
     list-style: none;
     padding: 5px;
 }
 
-footer img{
+footer img {
     width: 20px;
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+    main img {
+        width: 90%;
+    }
+    form {
+        max-width: 100%;
+    }
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
 }
