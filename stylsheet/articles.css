@@ -46,13 +46,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-main img {
+.image{
     width: 60%;
     max-width: 500px;
     border-radius: 10px;
-    margin-bottom: 2rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -76,11 +76,6 @@ main img {
 
 .article-card:hover {
     transform: scale(1.05);
-}
-
-.article-card img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 form {
@@ -147,17 +142,4 @@ footer ul {
 footer img {
     width: 20px;
     padding: 5px;
-}
-
-@media (max-width: 768px) {
-    main img {
-        width: 90%;
-    }
-    form {
-        max-width: 100%;
-    }
-    .articles {
-        flex-direction: column;
-        align-items: center;
-    }
 }
