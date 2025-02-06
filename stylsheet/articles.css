@@ -50,10 +50,10 @@ main {
 }
 
 .image{
-    width: 60%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+    width: 500px; 
+    margin: 2rem; 
+    border-radius: 7px;
 }
 
 .articles {
@@ -137,6 +137,10 @@ footer ul {
     display: flex;
     list-style: none;
     padding: 5px;
+}
+
+footer li a{
+    color: white;
 }
 
 footer img {
